@@ -16,14 +16,6 @@
             "project": "projects/jest-lib/ng-package.json"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/jest-lib/src/test.ts",
-            "tsConfig": "projects/jest-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/jest-lib/karma.conf.js"
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -110,23 +102,6 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "jest-lib-showcase:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/jest-lib-showcase/src/test.ts",
-            "polyfills": "projects/jest-lib-showcase/src/polyfills.ts",
-            "tsConfig": "projects/jest-lib-showcase/tsconfig.spec.json",
-            "karmaConfig": "projects/jest-lib-showcase/karma.conf.js",
-            "assets": [
-              "projects/jest-lib-showcase/src/favicon.ico",
-              "projects/jest-lib-showcase/src/assets"
-            ],
-            "styles": [
-              "projects/jest-lib-showcase/src/styles.css"
-            ],
-            "scripts": []
           }
         },
         "lint": {
